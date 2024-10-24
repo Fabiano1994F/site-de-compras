@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de Pagamento</title>
+</head>
+<body>
+    <header>
+        <h1>Pagamento</h1>
+        <nav>
+      
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h2>Formulário de Pagamento</h2>
+        <h3>Pague com Cartão de Crédito ou Débito</h3>
+        <form action="/processar-pagamento" method="POST">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+            <label for="card-number">Número do Cartão</label>
+            <input type="text" id="card-number" name="card-number" placeholder="Número do Cartão" required>
+
+            <label for="maturity">Vencimento</label>
+            <input type="text" id="maturity" name="maturity" placeholder="MM/AA" required>
+
+            <LAbel for="cvv">CVV</LAbel>
+            <input type="number" id="cvv" name="cvv" placeholder="CVV" required>
+
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Seu Telefone" required>
+
+            <button type="submit">Pagar</button>
+</form>
+
+    </div>
+    <footer>
+        <div class="rodape-conteudo">
+            <p>© 2024 Top Informática - Todos os direitos reservados.</p>
+            <ul>
+              <li><a href="privacidade.html">Política de Privacidade</a></li>
+              <li><a href="termos.html">Termos de Uso</a></li>
+            </ul>
+          </div>
+    </footer>
+</body>
+</html>

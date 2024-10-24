@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos para telas pequenas (dispositivos móveis) */
+body {
+  font-size: 16px; /* Fonte padrão para dispositivos móveis */
+}
+
+/* Estilos para telas maiores (tablets) */
+@media (min-width: 768px) {
+  body {
+      font-size: 18px;
+  }
+}
+
+/* Estilos para telas grandes (desktops) */
+@media (min-width: 1024px) {
+  body {
+      font-size: 20px;
+  }
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header h1 {
+  margin-bottom: 10px;
+  color: #ff6f61;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+section.produtos {
+  padding: 5px;
+  text-align: center;
+}
+section h2 {
+  text-align: center;
+}
+.produtos h2 {
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: #ff6f61;
+}
+.produto {
+  display: inline-block;
+  background-color: #fff;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+.produto h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.produto:hover {
+  background-color: rgb(169, 169, 165);
+}
+.produto p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+.container button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 3px;
+}
+section.contact {
+  padding: 20px;
+  text-align: center;
+}
+.contact i {
+  font-size: 50px;
+  color: #ff6f61;
+}
+section i {
+  color: #ff6f61;
+}
+.message-box p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+.redessociais a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.contact {
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.redessociais i {
+  font-size: 50px;
+}
+.redessociais {
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  text-align: center;
+}
+/* Formulário de pagamentos */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input:hover {
+  background-color: rgb(196, 196, 193);
+}
+.container h2 {
+  text-align: center;
+  padding: 10px;
+}
+.banner {
+  background-image: url('banner.jpg');
+  /* Substitua pelo caminho da imagem do seu banner */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner-conteudo {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* Botão Comprar */
+.botao-comprar {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+.botao-comprar:hover {
+  background-color: #ff856d;
+}
+/* Seção de Produtos Destaque */
+.produtos-destaque {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.produtos-destaque h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.produtos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.produto {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+.produto img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.produto h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+footer ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+footer ul li a:hover {
+  color: #fff;
+}
